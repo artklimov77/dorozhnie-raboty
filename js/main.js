@@ -77,6 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     handleForm('contactForm', 'formSuccess');
+    handleForm('heroForm', null);
     handleForm('sidebarForm', null);
 
     /* ── FAQ accordion ── */

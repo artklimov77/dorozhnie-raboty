@@ -30,7 +30,7 @@
         <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=85&auto=format&fit=crop" alt="Строительство и дорожные работы в Москве" class="hero__img" fetchpriority="high">
         <div class="hero__overlay"></div>
     </div>
-    <div class="container hero__inner">
+    <div class="container hero__inner hero__inner--cols">
         <div class="hero__content">
             <div class="hero__badge">Генеральный подрядчик · Москва и МО</div>
             <h1 class="hero__title">Строим всё.<br><em>Под ключ.</em></h1>
@@ -60,6 +60,36 @@
                     <p>специалистов</p>
                 </div>
             </div>
+        </div>
+        <div class="hero__form-card">
+            <div class="hero__form-card__title">Получить расчёт стоимости</div>
+            <div class="hero__form-card__sub">Оставьте заявку — перезвоним в течение 15 минут</div>
+            <form id="heroForm" novalidate>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="heroName">Ваше имя</label>
+                        <input type="text" id="heroName" name="name" placeholder="Иван Петров" autocomplete="name">
+                    </div>
+                    <div class="form-field">
+                        <label for="heroPhone">Телефон *</label>
+                        <input type="tel" id="heroPhone" name="phone" placeholder="+7 (___) ___-__-__" required autocomplete="tel">
+                    </div>
+                    <div class="form-field">
+                        <label for="heroService">Вид работ</label>
+                        <select id="heroService" name="service">
+                            <option value="">— Выберите услугу —</option>
+                            <option>Дорожные работы</option>
+                            <option>Строительство зданий</option>
+                            <option>Демонтаж</option>
+                            <option>Благоустройство</option>
+                            <option>Энергетика / ЛЭП</option>
+                            <option>Другое</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
+                </div>
+            </form>
+            <div class="hero__form-card__note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</div>
         </div>
     </div>
     <a href="#services" class="hero__scroll" aria-label="Вниз">
