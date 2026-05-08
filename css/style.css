@@ -683,6 +683,88 @@ section.about-values { display: block; }
 }
 
 /* ============================================================
+   ABOUT INTRO — RIGHT STATS PANEL
+   ============================================================ */
+.about-intro__panel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 100%;
+}
+.about-intro__panel-founded {
+    background: var(--orange);
+    border-radius: var(--radius);
+    padding: 28px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.about-intro__panel-year {
+    font-size: 56px;
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1;
+    letter-spacing: -0.04em;
+}
+.about-intro__panel-since {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 0.02em;
+}
+.about-intro__panel-nums {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    flex: 1;
+}
+.about-intro__panel-num {
+    background: var(--dark-card);
+    border: 1px solid var(--dark-border);
+    border-radius: var(--radius);
+    padding: 20px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    transition: border-color var(--transition);
+}
+.about-intro__panel-num:hover { border-color: rgba(249,115,22,0.3); }
+.about-intro__panel-num strong {
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--orange);
+    line-height: 1;
+    letter-spacing: -0.03em;
+}
+.about-intro__panel-num span {
+    font-size: 13px;
+    color: var(--text-muted);
+    font-weight: 500;
+    line-height: 1.3;
+}
+.about-intro__panel-certs {
+    background: var(--dark-card);
+    border: 1px solid var(--dark-border);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.about-intro__panel-cert {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    min-width: 130px;
+}
+.about-intro__panel-cert span {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+/* ============================================================
    ABOUT VALUES — CARD GRID VARIANT
    ============================================================ */
 .about-values__grid {
