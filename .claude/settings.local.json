@@ -5,7 +5,8 @@
       "Bash(gh --version)",
       "Bash(git config *)",
       "Bash(winget --version)",
-      "PowerShell(git config *)"
+      "PowerShell(git config *)",
+      "WebFetch(domain:www.istrask.ru)"
     ]
   }
 }
